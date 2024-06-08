@@ -1,0 +1,516 @@
+/* General Styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #ffffff;
+  color: #333;
+}
+
+
+
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  /* overflow: hidden; */
+  width: 100%;
+  z-index: 12;
+  height: 110px;
+
+  background: #000000;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #000000, #434343);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #000000, #434343); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+}
+
+.logo {
+
+  margin-left: 20px;
+  
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+
+  gap: 50px;
+
+}
+
+nav ul li {
+  padding-right: 30px;
+}
+
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px;
+  transition: color 0.3s;
+  font-size: 25px;
+}
+
+nav a:hover {
+  color: #ffcc00;
+}
+
+
+
+
+main {
+ 
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+/* main */
+
+.welcome {
+  margin-top: 130px;
+    text-align: center;
+    padding: 100px 0; /* Adjust as needed */
+    background-image: linear-gradient(to bottom, #ebb969, #ffbfbf);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .welcome-text {
+    max-width: 800px;
+    margin: 0 auto;
+    opacity: 0;
+    animation: fadeInUp 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+  }
+  
+  .welcome-text h1 {
+    font-size: 60px;
+    margin-bottom: 20px;
+    
+    font-family: "Montserrat", sans-serif; /* Your custom font */
+    color: #333; /* Your desired color */
+    transform: scale(0.8); /* Initial scale */
+    animation: scaleIn 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards,
+      rotate 10s linear infinite;
+  }
+  
+  .welcome-text p {
+
+    font-size: 24px;
+    color: #666; /* Your desired color */
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(50px) scale(0.8);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+  }
+  
+  @keyframes scaleIn {
+    from {
+      transform: scale(0.8);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
+  
+  @keyframes rotate {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  /* anout us */
+
+  #about {
+    background-color: #b1b1b1;
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  h2 {
+    font-size: 3.5em;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .flex-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+
+  .company-info,
+  .team-info {
+font-size: 1.5rem;
+    flex: 1 1 45%;
+    text-align: left;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #f1daf5;
+
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+   
+  }
+
+  .team-info{
+  margin-top: 1rem;
+   /* width: 50%; */
+  }
+  
+  .image-container {
+    flex: 1 1 45%;
+    margin-left: 20px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px; /* Rounded corners */
+  }
+  
+  .image-container img {
+
+    max-width: 100%;
+    /* height: auto; */
+    border-radius: 10px; /* Rounded corners */
+    transition: transform 0.3s ease;
+  }
+  
+  .image-container:hover img {
+    transform: scale(1.1);
+  }
+  
+  /* Additional styles */
+  @media screen and (max-width: 768px) {
+    .company-info,
+    .team-info,
+    .image-container {
+      flex: 1 1 100%;
+      margin-left: 0;
+      margin-bottom: 20px;
+    }
+
+    nav ul{
+      gap: 0px;
+    }
+
+
+  }
+  
+
+/* Vision and Mission Section Styles */
+.vision-mission {
+    background-color: #cdd9ff;
+    padding: 80px 74px;
+    text-align: center;
+  }
+  
+  .vision-mission-container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .vision, .mission {
+    margin-bottom: 40px;
+    text-align: left;
+    border-radius: 8px;
+    border: 2px solid #2e86de; /* Border color */
+    padding: 20px;
+    transition: all 0.3s ease; /* Smooth transition */
+  }
+  
+  .vision h2, .mission h2 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .vision p, .mission p {
+    font-size: 25px;
+    line-height: 1.6;
+  }
+  
+  /* Styling individual sections */
+  .vision:hover, .mission:hover {
+    border-color: #27ae60; /* Change border color on hover */
+    transform: scale(1.05); /* Scale effect on hover */
+  }
+  
+
+
+/* Your existing styles */
+
+
+.services {
+    text-align: center;
+    padding: 50px 0;
+   
+  }
+  
+  .services-container {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+  }
+  
+  .services-scroll {
+    display: flex;
+    white-space: nowrap;
+    animation: scrollImages 20s linear infinite; /* Adjust animation duration as needed */
+  }
+  
+  .service {
+    flex: 0 0 auto;
+    width: 300px;
+    margin-right: 20px;
+    background-color: #b5d5df;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .service img {
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  @keyframes scrollImages {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+
+
+/* Footer styles */
+.footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 30px 0;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 30px;
+  
+}
+
+.contact-info, .map {
+  flex: 1 1 45%;
+  max-width: 400px;
+  text-align: left;
+}
+
+.contact-info h3 {
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+.contact-info p {
+  line-height: 1.6;
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+
+.map iframe {
+  width: 100%;
+  height: 250px;
+  border: none;
+  border-radius: 8px;
+}
+
+.footer-text {
+  margin-top: 20px;
+  flex-basis: 100%;
+  font-size: 25px;
+}
+
+/* Additional style */
+.footer-container::after {
+  content: '';
+  flex-basis: 100%;
+  height: 1px;
+  background-color: #555;
+  margin-top: 30px;
+}
+
+/* Remaining styles... */
+/* styles.css */
+
+/* Existing styles */
+
+/* Media Query for Responsive Design */
+@media screen and (max-width: 768px) {
+  /* Adjustments for smaller screens or mobile devices */
+ 
+  .services-grid {
+    /* Modify grid layout for services on smaller screens */
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .service {
+    /* Adjust service item styles for smaller screens */
+    padding: 15px;
+  }
+  
+  /* Additional adjustments as needed */
+}
+
+
+
+
+
+
+/* Media Query for Enhanced Responsive Design */
+@media screen and (max-width: 768px) {
+
+  .welcome-text h1{
+    font-size: 43px;
+  }
+
+
+  /* Services grid adjustments */
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+  }
+
+  .service {
+    padding: 12px;
+  }
+
+  /* Text adjustments */
+  h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+
+  .company-info,
+  .team-info {
+    font-size: 16px;
+    padding: 15px;
+  }
+
+  /* Footer adjustments */
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .contact-info,
+  .map {
+    width: 100%;
+  }
+
+  .map iframe {
+    height: 200px;
+  }
+
+  /* Additional adjustments as needed */
+}
+
+/* hamburger menu  */
+
+.icon{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+
+.icon i{
+  font-size: 2rem;
+  font-weight: 600;
+  margin-right: 0.8rem;
+}
+.showData{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 110px;
+  left: 0px;
+  background-color: #94928a;
+  width:100vw;
+ height: 300px;
+gap: 10px;
+/* padding-bottom: 120px; */
+
+ 
+ 
+}
+@media (max-width:600px) {
+  
+  header {
+    text-align: center;
+    padding: 15px 10px;
+    gap: 50px;
+  }
+
+  
+ nav ul {
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+  } 
+
+
+  nav ul{
+    display: none;
+  }
+
+  .welcome-text h1{
+    font-size: 40px;
+  }
+
+.icon{
+  display: flex;
+}
+
+
+.logo {
+  margin: 10px 0;
+}
+}

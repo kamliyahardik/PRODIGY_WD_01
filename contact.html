@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="contact.css" />
+  </head>
+  <body>
+    <header>
+        <a href="http://127.0.0.1:5500/index.html"
+        ><div class="logo">
+          <img src="logo.jpeg" alt="" height="60px" width="70px" />
+        </div>
+      </a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          
+        
+        </ul>
+        <div class="icon">
+          <i   id="bar" class="ri-menu-fill"></i>
+          <!-- <i   class="ri-close-fill"></i> -->
+        </div>
+
+      
+      </nav>
+    </header>
+
+    <main>
+      
+      </section>
+
+      <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Feel free to get in touch with us for any inquiries or assistance.</p>
+        <form action="submit_contact_form.php" method="POST">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="mobile">Mobile Number:</label>
+          <input type="tel" id="mobile" name="mobile" required>
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea>
+
+          <input type="submit" value="Submit">
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+          <div class="contact-info">
+            <h3>Contact Information</h3>
+            <p><strong>Email:</strong> contact@company.com</p>
+            <p><strong>Customer Care:</strong> +1-800-123-4567</p>
+            <p><strong>Address:</strong> 123 Company Street, City, Country</p>
+          </div>
+          <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1234.5678!2dlongitude!3dlatitude!4dzoomlevel!5d" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+        </div>
+        <p class="footer-text">&copy; 2024 Company Name. All Rights Reserved.</p>
+      </footer>
+      <script src="script.js"></script>
+  </body>
+</html>
